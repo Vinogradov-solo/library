@@ -9,8 +9,7 @@ public class Person {
     @Size(min = 2, max = 100, message = "Name should be between 2 and 100 characters")
     private String name;
 
-    @Min(value = 0, message = "Should be 0 and more (integer)")
-    @Size(min = 1900, max = 2023, message = "Date should be between 1900 and 2023 years")
+    @Min(value = 1900, message = "Should be more than 1900")
     private int year_of_birth;
 
     public Person() {}
